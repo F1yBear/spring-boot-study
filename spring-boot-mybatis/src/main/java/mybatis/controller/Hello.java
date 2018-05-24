@@ -1,0 +1,23 @@
+package mybatis.controller;
+
+import mybatis.bean.Massage;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
+public class Hello {
+
+    @GetMapping("hello")
+    public Massage first() {
+        Massage massage = new Massage();
+        massage.setStatus("success");
+        massage.setCode(200);
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("hello", "000");
+        massage.setContent(map);
+        return massage;
+    }
+}

@@ -1,0 +1,19 @@
+#server settings
+server:
+  port: 10086
+  context-path: /litte
+
+#数据库
+jdbc:
+     driver: com.mysql.jdbc.Driver
+     url: jdbc:mysql://127.0.0.1:3306/litte_prom?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+     user: root
+     password: root
+
+
+mybatisConfigFilePath: mybatis-config.xml
+mapperPath:  /mapper/*.xml
+entityPackage: com.wangfeixiong.litteprom.bean
+
+logging:
+  config: classpath:log4j2.yaml
