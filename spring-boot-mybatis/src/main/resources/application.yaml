@@ -1,7 +1,7 @@
 #server settings
 server:
-  port: 10086
-  context-path: /litte
+  port: 12601
+  context-path: /mybatis
 
 #数据库
 jdbc:
