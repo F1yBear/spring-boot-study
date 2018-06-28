@@ -6,7 +6,7 @@
 
     <groupId>com.fexo.study</groupId>
     <artifactId>spring-boot-stady</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>RELEASE</version>
     <modules>
         <module>spring-boot-mybatis</module>
     </modules>
