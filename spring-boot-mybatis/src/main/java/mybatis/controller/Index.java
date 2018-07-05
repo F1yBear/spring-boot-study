@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Index {
 
 
-    @RequestMapping(value = "")
+  @RequestMapping("")
     public  String index(){
         return "/swagger-ui.html";
     }
