@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author
+ */
 @RestController
 @RequestMapping("mybatis")
 public class Hello {
