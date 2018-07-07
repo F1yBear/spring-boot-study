@@ -1,4 +1,4 @@
-package mybatis.bean;
+package com.fexo.bean;
 
 public class Massage {
 

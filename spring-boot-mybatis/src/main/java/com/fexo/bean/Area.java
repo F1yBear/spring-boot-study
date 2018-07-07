@@ -1,4 +1,4 @@
-package mybatis.bean;
+package com.fexo.bean;
 
 import java.util.Date;
 

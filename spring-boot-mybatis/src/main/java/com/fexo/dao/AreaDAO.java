@@ -1,4 +1,4 @@
-package mybatis.dao;
+package com.fexo.dao;
 
 
 public interface AreaDAO {

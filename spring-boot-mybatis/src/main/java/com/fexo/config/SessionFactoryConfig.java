@@ -1,4 +1,4 @@
-package mybatis.config;
+package com.fexo.config;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -14,9 +14,12 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 
 import javax.sql.DataSource;
 
+/**
+ * @author
+ */
 @Configuration
 @EnableTransactionManagement
-@MapperScan("mybatis.dao")
+@MapperScan("com.fexo.dao")
 public class SessionFactoryConfig implements TransactionManagementConfigurer{
     /** * mybatis 配置路径 */
     private static String MYBATIS_CONFIG = "mybatis-config.xml";
@@ -24,7 +27,7 @@ public class SessionFactoryConfig implements TransactionManagementConfigurer{
     @Autowired
     private DataSource dataSource;
 
-    private String typeAliasPackage = "mybatis.bean";
+    private String typeAliasPackage = "com.fexo.bean";
 
     /**
      *创建sqlSessionFactoryBean 实例
