@@ -1,7 +1,7 @@
 #server settings
 server:
-  port: 12601
-  context-path: /mybatis
+  port: 9000
+  context-path:
 
 
 spring:

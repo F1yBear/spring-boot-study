@@ -1,12 +1,18 @@
 package com.fexo.bean;
 
-public class Massage {
+import com.google.common.base.MoreObjects;
+
+/**
+ * @author  wangfeixiong
+ * @param <T>
+ */
+public class Massage<T> {
 
     public int code;
 
     public String status;
 
-    public Object content;
+    public T content;
 
     public int getCode() {
         return code;
@@ -24,11 +30,20 @@ public class Massage {
         this.status = status;
     }
 
-    public Object getContent() {
+    public T getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(T content) {
         this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("code", code)
+                .add("status", status)
+                .add("content", content)
+                .toString();
     }
 }

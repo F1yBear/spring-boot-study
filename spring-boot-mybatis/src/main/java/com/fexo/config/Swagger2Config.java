@@ -31,7 +31,7 @@ public class Swagger2Config {
         return new ApiInfoBuilder()
                 .title("mybatis工程Api文档")
                 .description("简单优雅的restful风格")
-                .termsOfServiceUrl("")
+                .termsOfServiceUrl("wangfeixong.cn")
                 .version("1.0")
                 .build();
     }
