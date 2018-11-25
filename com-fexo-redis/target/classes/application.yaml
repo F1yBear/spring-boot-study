@@ -1,9 +1,0 @@
-#server settings
-server:
-  port: 9001
-  context-path:
-
-logging:
-  config: classpath:log4j2.yaml
-
-
