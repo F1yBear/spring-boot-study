@@ -6,14 +6,14 @@
 在子工程命名和对应的 README.md 中有说明。
 ```
 ---
-###项目启动路径
+## 项目启动路径
 1. [项目swagger路径](127.0.0.1:9000/swagger-ui.html)
 2. [项目数据库查看](127.0.0.1:9000/druid)
-###使用的技术栈
+## 使用的技术栈
 - [x] 整合mybatis 和 mybatisPlus
 - [x] 整合swagger2 
 - [x] 整合redis集群高可用
-- [x] 整合elasticsearch
-- [x] 整合http-client
-- [x] 整合mongodb
-- [x] JPA技术
+- [ ] 整合elasticsearch
+- [ ] 整合http-client
+- [ ] 整合mongodb
+- [ ] JPA技术
