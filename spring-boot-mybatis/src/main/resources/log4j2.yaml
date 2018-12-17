@@ -1,7 +1,7 @@
 # 共有8个级别，按照从低到高为：ALL < TRACE < DEBUG < INFO < WARN < ERROR < FATAL < OFF。
 
 Configuration:
-  status: warn
+  status: debug
   monitorInterval: 30
 
   Properties: # 定义全局变量
