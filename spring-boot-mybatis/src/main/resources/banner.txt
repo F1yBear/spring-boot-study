@@ -1,6 +1,6 @@
 ${AnsiColor.BRIGHT_YELLOW}
 =========================================================
 
-                spring-boot 学习demo
+                spring-boot study
 =========================================================
 ${AnsiColor.BLACK}

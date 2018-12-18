@@ -28,7 +28,7 @@ spring:
         removeAbandonedTimeoutMillis: 20000
         logAbandoned: true
         logDifferentThread: true
-        filters: log4j2
+        filters: logback
         connectionProperties:  druid.stat.mergeSql=true;druid.stat.logSlowSql=true;druid.stat.slowSqlMillis=3000
         useGlobalDataSourceStat: true
         # Druid 监控 Servlet 配置参数
@@ -53,4 +53,5 @@ mybatis:
 
 
 logging:
-  config: classpath:log4j2.yaml
+  config: classpath:logback.xml
+  path: D:/logs/spring-boot/
