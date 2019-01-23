@@ -15,6 +15,9 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
+/**
+ * @author F1yBear
+ */
 @Component
 @ConfigurationProperties(prefix = "spring.datasource")
 public class DruidConfig {
