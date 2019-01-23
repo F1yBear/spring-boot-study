@@ -1,0 +1,18 @@
+#server settings
+server:
+  port: 9002
+
+
+logging:
+  config: classpath:logback.xml
+  path: D:/logs/spring-boot/
+
+spring:
+    application:
+        name: spring-boot-redis
+    redis:
+        host: 127.0.0.1
+        port: 6379
+        password: myredis
+        timeout: 20000
+
