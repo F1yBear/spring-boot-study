@@ -9,6 +9,7 @@
     <version>1.5.10.RELEASE</version>
     <modules>
         <module>spring-boot-mybatis</module>
+        <module>spring-boot-redis</module>
     </modules>
     <name>spring-boot-study</name>
     <packaging>pom</packaging>
@@ -30,6 +31,7 @@
         <druid.version>1.0.26</druid.version>
         <mysql.version>8.0.11</mysql.version>
         <fastjson.version>1.2.47</fastjson.version>
+        <logback.version>1.2.3</logback.version>
     </properties>
 
     <dependencyManagement>
@@ -49,24 +51,12 @@
                 <artifactId>spring-boot-starter-test</artifactId>
             </dependency>
 
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>2.9.0</version>
-            </dependency>
-
             <!--log-->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.2.3</version>
+                <version>${logback.version}</version>
                 <scope>compile</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.fasterxml.jackson.dataformat</groupId>
-                <artifactId>jackson-dataformat-yaml</artifactId>
-                <version>${jackJson.version}}</version>
             </dependency>
 
             <!--swagger2-->
@@ -97,6 +87,13 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.2.3</version>
+                <scope>compile</scope>
             </dependency>
 
 
