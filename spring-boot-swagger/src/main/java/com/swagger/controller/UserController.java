@@ -1,12 +1,9 @@
-package com.fexo.controller;
+package com.swagger.controller;
 
-import com.fexo.bean.Massage;
-import com.fexo.bean.User;
+import com.swagger.bean.Massage;
+import com.swagger.bean.User;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 用户相关的api

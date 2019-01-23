@@ -1,4 +1,4 @@
-package com.fexo.config;
+package com.swagger.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,14 +22,14 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.fexo.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.swagger.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("mybatis工程Api文档")
+                .title("swagger工程Api文档")
                 .description("简单优雅的restful风格")
                 .termsOfServiceUrl("wangfeixong.cn")
                 .version("1.0")
