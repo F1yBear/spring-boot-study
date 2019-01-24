@@ -9,7 +9,7 @@ Spring-boot-study是一个maven工程。
 - [x] [整合mybatis](https://github.com/F1yBear/spring-boot-study/blob/master/spring-boot-mybatis/README.md)
 - [x] [整合swagger-ui](https://github.com/F1yBear/spring-boot-study/blob/master/spring-boot-swagger/README.md)
 - [x] [整合redis集群高可用](https://github.com/F1yBear/spring-boot-study/blob/master/spring-boot-redis/README.md)
-- [ ] [整合elasticsearch](https://github.com/F1yBear/spring-boot-study/blob/master/spring-boot-elasticsearch/README.md)
+- [x] [整合elasticsearch](https://github.com/F1yBear/spring-boot-study/blob/master/spring-boot-elasticsearch/README.md)
 - [ ] 整合http-client
 - [ ] 整合mongodb
 - [ ] 整合stringTemplate
