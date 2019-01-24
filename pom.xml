@@ -11,6 +11,7 @@
         <module>spring-boot-mybatis</module>
         <module>spring-boot-redis</module>
         <module>spring-boot-swagger</module>
+        <module>spring-boot-elasticsearch</module>
     </modules>
     <name>spring-boot-study</name>
     <packaging>pom</packaging>
@@ -33,6 +34,8 @@
         <mysql.version>8.0.11</mysql.version>
         <fastjson.version>1.2.47</fastjson.version>
         <logback.version>1.2.3</logback.version>
+        <elasticsearch.version>5.4.3</elasticsearch.version>
+        <jest.version>6.3.1</jest.version>
     </properties>
 
     <dependencyManagement>
@@ -106,8 +109,15 @@
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
+                <artifactId>spring-boot-devtools</artifactId>
+                <optional>true</optional>
+            </dependency>
+
+            <!--导入Jest依赖-->
+            <dependency>
+                <groupId>io.searchbox</groupId>
+                <artifactId>jest</artifactId>
+                <version>${jest.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
