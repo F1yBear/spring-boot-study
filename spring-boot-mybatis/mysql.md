@@ -1,9 +1,9 @@
-# 脏读，幻读，不可重复读的区别
-| 隔离级别 | 脏读 | 幻读 | 不可重复读 | 第一类丢失更新 | 第二类丢失更新 |  
-| :--| :---: | :------: |:------: |:------: |:------:|  
-| read_uncommited | v | x|      v    |        x     |      x      |    
-| read_commited | x | v|      v    |        x     |      x      |  
-| REPEATABLE READ | x | v|      v    |        x     |      x      | 
-| Serializable| x | v|      v    |        x     |      x      | 
+# 脏读，幻读，不可重复读与事务隔离级别关系
+| 隔离级别 | 脏读 | 幻读 | 不可重复读 |
+| :--| :---: | :------: |:------: | 
+| read_uncommited | v | v | v |  
+| read_commited   | x | v | v | 
+| REPEATABLE READ | x | x | x | 
+| Serializable    | v | x | x | 
 
 
