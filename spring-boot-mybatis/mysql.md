@@ -3,7 +3,7 @@
 | :--| :---: | :------: |:------: | 
 | read_uncommited | v | v | v |  
 | read_commited   | x | v | v | 
-| REPEATABLE READ | x | x | x | 
-| Serializable    | v | x | x | 
+| REPEATABLE READ | x | v | x | 
+| Serializable    | x | x | x | 
 
 
